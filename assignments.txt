@@ -1,0 +1,35 @@
+irwan@irwan-VPCEH2JFX:~/Desktop/DojoAssignments$ ls -R
+.:
+iOS  MEAN  netCore  Python  Ruby  WebFundamentals
+
+./iOS:
+about.txt
+
+./MEAN:
+about.txt
+
+./netCore:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./WebFundamentals:
+about.txt  CSS  Git  HTML  Javascript
+
+./WebFundamentals/CSS:
+about.txt
+
+./WebFundamentals/Git:
+about.txt
+
+./WebFundamentals/HTML:
+about.txt  indentation.html
+
+./WebFundamentals/Javascript:
+about.txt
+irwan@irwan-VPCEH2JFX:~/Desktop/DojoAssignments$ 
+
