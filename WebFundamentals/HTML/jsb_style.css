@@ -1,0 +1,58 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 970px;
+ height: 970px;
+ margin-top: 10px;
+ background-color: rgb(0, 26, 102);
+ margin: 1px;
+}
+h1 {
+	
+	color: rgb(204, 255, 255);
+	font-family: "Times New Roman";
+}
+#header{
+ height: 50px;
+ background-color: red;
+ border-radius: 12px;
+ margin: 12px;
+ 
+ padding: 12px;
+
+
+}
+#navigation{
+ height: 400px;
+ width: 300px;
+ /*letter-spacing: 2px;*/
+ line-height: 1;
+ color: rgb(152, 230, 230);
+ background-color: rgb(0, 153, 153);
+ display: inline-block;
+ text-decoration: underline;
+ text-decoration-color: rgb(152, 230, 230);
+
+}
+#main_content{
+ height: 250px;
+ width: 465px;
+ background-color: black;
+ display: inline-block;
+ vertical-align: top;
+}
+.subcontents{
+ height: 135px;
+ width: 135px;
+ background-color: yellow;
+ display: inline-block;
+}
+#url_information{
+ height: 45px;
+ width: 725px;
+ padding: 5px;
+ background-color: purple;
+}
