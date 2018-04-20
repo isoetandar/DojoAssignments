@@ -1,11 +1,10 @@
 *{
  margin: 0px;
  padding: 0px;
- /*outline: dotted red;*/
 }
 #wrapper{
  width: 1050px;
- height: 1500px;
+ height: 1200px;
  background-color: black;
  margin: 0px auto;
  padding: 10px;
@@ -16,89 +15,68 @@
  text-align: right;
  padding: 20px;
 }
-
 .white{
 	color: white;
 	text-align: center;
-
 }
-
- /*padding: 10px;*/
- /*margin: 10px;*/
-
-
 #button{
  height: 48px;
  background-color: black;
- /*border-radius: 15px;*/
- /*padding: 10px;*/
- /*margin: 10px;*/
 }
 #picture{
- height: 150px;
- background-color: blue;
- border-radius: 15px;
- /*padding: 10px;*/
- /*margin: 10px;*/
+ height: 355px;
 }#buypicture{
- height: 150px;
- background-color: yellow;
- border-radius: 15px;
- /*padding: 10px;*/
- /*margin: 10px;*/
-}#Portofolio{
- height: 150px;
+ height: 130px;
+  padding: 5px;
+}
+#Portofolio{
+ height: 350px;
+ width: 200px;
  background-color: silver;
  border-radius: 15px;
- /*padding: 10px;*/
- /*margin: 10px;*/
-}
-
-
-/*
-#navigation{
- height: 300px;
- width: 200px;
- background-color: blue;
- /*padding: 10px;*/
- /*margin: 10px;
- margin-top: 10px;
- display: inline-block;
- vertical-align: top;
-}
-#main_content{
- height: 400px;
- width: 700px;
- background-color: red;
- display: inline-block;
- vertical-align: right;
- vertical-align: top;
- margin: 10px;
 }
 .subcontents{
- height: 200px;
- width: 210px;
- background-color: yellow;
+ height: 76px;
+ width: 220px;
+ background-color: black;
  display: inline-block;
- margin: 10px;
+ vertical-align: top;
+ padding: 1px;
+ margin: 2px;
 }
-#advertisement{
- height: 120px;
- width: 660px;
- background-color: purple;
- margin: 10px;
+.orange{
+	color: orange;
+}
+img.pictureSize{
+	width: 60px;
+	height: 60px;
+}
+.mpic_size{
+	width:1020px; 
+	height:400px;
 }
 hr.horz-rule {
-  background-color: black;
-  width: 80%;
-  height: 2px;
+  background-color: silver;
+  width: 100%;
+  height: 3px;
   margin: 5px;
-}*/
-#ninja{
-	height: 120px;
-	width: 90px;
-	padding: 45px;
-	/*margin-bottom: 5px;*/
-	/*margin-top: 5px;*/
-	/*margin: 10px;*/
+}
+.buybutton{
+	width: 1050px;
+	height: 140px;
+}
+.PortofolioHeader{
+	width: 1050px;
+	height: 90px;
+	margin: 5px;
+}
+.subportofolio{
+ height: 250px;
+ width: 220px;
+ background-color: black;
+ display: inline-block;
+ vertical-align: top;
+ text-align: bottom;
+ padding: 5px;
+ margin: 5px;
 }
