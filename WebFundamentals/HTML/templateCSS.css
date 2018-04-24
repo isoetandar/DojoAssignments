@@ -1,7 +1,8 @@
 /*CSS reset settings here*/
 *{
- margin: 10px;
+ margin: 00px;
  padding: 0px;
+ outline: dotted red;
 }
 #wrapper{
  width: 970px;

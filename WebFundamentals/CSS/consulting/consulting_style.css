@@ -1,0 +1,173 @@
+/*CSS reset settings here*/
+*{
+ margin: 00px;
+ padding: 0px;
+ /*outline: dotted red;*/
+}
+#wrapper1{
+ width: 900px;
+ height: 1135px;
+ background-color: black;
+ margin: 10px auto;
+ padding: 10px;
+ 
+ border-color: red;
+ text-align: center;
+ text-decoration-line: solid;
+ text-decoration: red;
+ border-width: 20px;
+}
+#wrapper2{
+ width: 865px;
+ height: 710px;
+ background-color: white;
+ margin: 1px auto;
+ padding: 10px;
+ border-color: red;
+ text-align: center;
+ text-decoration-line: solid;
+ text-decoration: red;
+ border-width: 20px;
+}
+#wrapper3{
+ width: 865px;
+ height: 245px;
+ background-color: white;
+ margin: 2px auto;
+ padding: 10px;
+ border-color: red;
+ text-align: center;
+ text-decoration-line: solid;
+ text-decoration: red;
+ border-width: 20px;
+}
+
+
+.header{
+ height: 55px;
+ background-color: black;
+ border: 1px solid black;
+ margin: 5px;
+ font-weight: bold;
+ text-align: left;
+ padding: 5px;
+ color: white;
+}
+#text_header1{
+	width: 365px;
+	height: 50px;
+	margin-top: 4px;
+	margin-left: 5px;
+	font-size: 35px;
+	display: inline-block;
+}
+#text_header2{
+	width: 50px;
+	margin-top: 5px;
+	margin-left: 40px;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.blue{
+	color: blue
+}
+
+#main_picture{
+ height: 360px;
+ background-color: lightblue;
+ border-color: red;
+ margin: 10px;
+}
+#content_layers3{
+ height: 240px;
+ width: 275px;
+ background-color: white;
+ border-color: red;
+ margin: 5px;
+ display: inline-block;
+ vertical-align: middle;
+}
+#content_layers{
+ height: 325px;
+ width: 268px;
+ background-color: rgb(51, 153, 255);
+ margin: 5px;
+ display: inline-block;
+ vertical-align: middle;
+}
+#contents{
+ height: 175px;
+ width: 240px;
+ background-color: rgb(51, 153, 255);
+ color: white;
+ margin: 5px;
+ text-align: middle;
+ vertical-align: middle;
+ padding: 7px;
+}
+#contents3{
+ height: 130px;
+ width: 250px;
+ background-color: rgb(51, 153, 255);
+ color: white;
+ margin: 5px;
+ text-align: middle;
+ vertical-align: middle;
+ padding: 7px;
+}
+#contents4{
+ height: 130px;
+ width: 250px;
+ background-color: white;
+ color: blue;
+ margin: 5px;
+ text-align: middle;
+ vertical-align: middle;
+ padding: 7px;
+}
+#contents_picture{
+ height: 60px;
+ width: 260px;
+ background-color: rgb(51, 153, 255);
+ border-color: red;
+ margin: 5px;
+ }
+.image_size{
+	width: 60px;
+	height: 60px;
+	text-align: middle;
+	vertical-align: middle;
+	display: inline-block;
+}
+.text_services{
+	width: 170px;
+	height: 35px;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 32px;
+}
+.text_services3{
+	width: 250px;
+	height: 25px;
+	font-size: 18px;
+	padding: 14px;
+}
+
+.button{
+	height: 35px;
+	width: 140px;
+	background-color: lightblue;
+	border-radius: 5px;
+	margin-right: 110px;
+	margin-top: 10px;
+}
+
+.footnote{
+	height: 30px;
+	width: 877px;
+	background-color: rgb(179, 217, 255);
+	margin-left: 7px;
+	padding: 5px;
+	height: 55px;
+}

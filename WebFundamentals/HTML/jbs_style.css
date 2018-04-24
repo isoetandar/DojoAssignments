@@ -1,0 +1,65 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+ /*outline: dotted red;*/
+}
+#wrapper{
+ width: 950px;
+ background-color: black;
+ margin: 0px auto;
+ padding: 10px;
+}
+#header{
+ height: 150px;
+ background-color: green;
+ border-radius: 15px;
+ /*padding: 10px;*/
+ /*margin: 10px;*/
+}
+#navigation{
+ height: 300px;
+ width: 200px;
+ background-color: blue;
+ /*padding: 10px;*/
+ /*margin: 10px;*/
+ margin-top: 10px;
+ display: inline-block;
+ vertical-align: top;
+}
+#main_content{
+ height: 400px;
+ width: 700px;
+ background-color: red;
+ display: inline-block;
+ vertical-align: right;
+ vertical-align: top;
+ margin: 10px;
+}
+.subcontents{
+ height: 200px;
+ width: 210px;
+ background-color: yellow;
+ display: inline-block;
+ margin: 10px;
+}
+#advertisement{
+ height: 120px;
+ width: 660px;
+ background-color: purple;
+ margin: 10px;
+}
+hr.horz-rule {
+  background-color: black;
+  width: 80%;
+  height: 2px;
+  margin: 5px;
+}
+#ninja{
+	height: 120px;
+	width: 90px;
+	padding: 45px;
+	/*margin-bottom: 5px;*/
+	/*margin-top: 5px;*/
+	/*margin: 10px;*/
+}

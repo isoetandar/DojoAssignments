@@ -1,0 +1,163 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ /*outline: dotted red;*/
+}
+#wrapper{
+ width: 1050px;
+ height: 1200px;
+ background-color: black;
+ margin: 0px auto;
+ padding: 10px;
+}
+#header{
+ height: 70px;
+ background-color: black;
+ text-align: left;
+ padding: 20px;
+}
+.ModernizeLogo{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+.CallUs{
+	width: 150px;
+	height: 20px;
+	color: white; /*letter color*/
+	text-align: right;
+	display: inline-block;
+	vertical-align: top;
+	margin: 25px 5px 20px 695px;
+}
+
+#button{
+	height:40px;
+	width: 1040px;
+	/*color: white; letter-color*/
+	background-color: silver;
+	display: inline-block;
+	/*margin:5px;*/
+	/*padding: 10px;*/
+	vertical-align: left;
+}
+.buttonshape{
+	background-color: silver;
+	border-radius: 3px;
+	height: 40px;
+	width: 100px;
+	/*margin: 5px;*/
+	border-left-color: grey;
+	vertical-align: left;
+}
+
+#picture{
+ height: 355px;
+ width: 1040px;
+ /*margin-top: 5px;*/
+ vertical-align: left;
+}
+
+.horizontal-line{
+	height: 5px;
+	width: 1040px;
+	background-color: silver;
+}
+#subcontents-line{
+	height: 100px;
+	width: 1040px;
+	/*background-color: green;*/
+}
+
+.subcontents{
+ height: 95px;
+ width: 250px;
+ /*background-color: orange;*/
+ display: inline-block;
+ vertical-align: top;
+ padding: 1px;
+ margin: 2px;
+}
+
+.content-info{
+	width: 170px;
+	height: 75px;
+	color: white;
+	vertical-align: top;
+	text-align: left;
+	display: inline-block;
+}
+
+.pict-content{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#buypicture{
+ height: 95px;
+  padding-left: 15px;
+  /*background-color: green;*/
+}
+#buytext{
+	height: 80px;
+	width:700px;
+	display: inline-block;
+	margin: 5px;
+	color: white;
+	font-size:12px;
+}
+.buttonBuy{
+	height: 30px;
+	width: 100px;
+	background-color: orange;
+	border-radius: 5px;
+	display: inline-block;
+	margin-left: 215px;
+	/*margin-top: 5px;*/
+	padd/*i*/ng: 10px;
+}
+
+
+
+#Portofolio{
+ height: 350px;
+ width: 200px;
+ background-color: silver;
+ border-radius: 15px;
+}
+.orange{
+	color: orange;
+}
+img.pictureSize{
+	width: 60px;
+	height: 60px;
+}
+.mpic_size{
+	width:1020px; 
+	height:400px;
+}
+hr.horz-rule {
+  background-color: silver;
+  width: 100%;
+  height: 3px;
+  margin: 5px;
+}
+
+.PortofolioHeader{
+	width: 1050px;
+	height: 90px;
+	margin: 5px;
+}
+.subportofolio{
+ height: 250px;
+ width: 220px;
+ background-color: black;
+ display: inline-block;
+ vertical-align: top;
+ text-align: bottom;
+ padding: 5px;
+ margin: 5px;
+}
