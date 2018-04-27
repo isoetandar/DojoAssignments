@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ninja Cat Puzzle</title>
+	<link rel="stylesheet" type="text/css" href="ninjaCat_style.css">
+	<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			// console.log($());
+			$('img').click(function() {
+				var temp = $(this).attr('data-alt-src');
+				// console.log(temp);
+				$(this).attr('data-alt-src', $(this).attr('src'));
+				// console.log($(this).attr('data-alt-src'));
+				$(this).attr('src', temp);
+				// console.log($(this).attr('src'));
+			});
+		});
+	</script> <!-- jQuery-->
+<!-- </head> -->
+<body>
+	<div id="wrapper">
+		<img src='img/sf101.png'  data-alt-src='img/mt101.png' />
+		<img src='img/mt201.png'  data-alt-src='img/sf201.png' />
+		<img src='img/sf301.png'  data-alt-src='img/mt301.png' />
+		<img src='img/mt102.png'  data-alt-src='img/sf102.png' />
+		<img src='img/sf202.png'  data-alt-src='img/mt202.png' />
+		<img src='img/mt302.png'  data-alt-src='img/sf302.png' />
+		<img src='img/sf103.png'  data-alt-src='img/mt103.png' />
+		<img src='img/mt203.png'  data-alt-src='img/sf203.png' />
+		<img src='img/sf303.png'  data-alt-src='img/mt303.png' />	
+	</div> <!--EO wrapper-->
+</body>
+</html>

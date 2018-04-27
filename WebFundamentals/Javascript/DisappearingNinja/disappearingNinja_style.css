@@ -1,0 +1,26 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+ /*outline: dotted red;*/
+}
+#wrapper{
+ width: 400px;
+ background-color: grey;
+ margin: 20px auto;
+ padding: 10px;
+ text-align: left;
+}
+.image_ninja{
+	width: 322px;
+	height: 150px;
+	margin :20px;
+	padding: 20px;
+	background-color: white;
+}
+.image_ninja img{
+	width: 75px;
+	height: 75px;
+	border: 1px solid black;
+	display: inline-block;
+}

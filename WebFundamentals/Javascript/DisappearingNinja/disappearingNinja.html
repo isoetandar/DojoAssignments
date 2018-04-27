@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Ninja</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="disappearingNinja_style.css"> <!-- stylesheet-->
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> <!-- jQuery  -->
+</head>
+<body>
+	<div id="wrapper">jQuery assignment 1
+		<div class="image_ninja"/>
+			<img src="NINJ1.jpg"/>			
+			<img src="NINJ2.jpg"/>
+			<img src="NINJ3.jpg"/>
+			<img src="Ninj4.png"/>		
+			<img src="Ninj5.png"/>
+			<img src="NINJ6.jpg"/>		
+			<img src="NINJ7.jpg"/>
+			<img src="NINJ8.jpg"/>
+		</div> <!--end of image ninja-->
+		<button>Reset<button>		
+	</div> <!--end of wrapper-->
+	<script>
+		$(document).ready(function(){
+			$('img').click(function(){
+				$(this).hide();
+			});
+			$('button').click(function(){
+				$('img').show();
+			});
+		});		
+	</script> <!--EO jQuery-->
+
+
+</body>
+</html>

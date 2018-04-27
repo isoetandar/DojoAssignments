@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ninja Cat Puzzle</title>
+	<link rel="stylesheet" type="text/css" href="ninjaCat_style.css">
+	<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			// console.log($());
+			$('img').click(function() {
+				var temp = $(this).attr('data-alt-src');
+				// console.log(temp);
+				$(this).attr('data-alt-src', $(this).attr('src'));
+				// console.log($(this).attr('data-alt-src'));
+				$(this).attr('src', temp);
+				// console.log($(this).attr('src'));
+			});
+		});
+	</script> <!-- jQuery-->
+<!-- </head> -->
+<body>
+	<div id="wrapper">
+		<img src='img/cat0.png'  data-alt-src='img/ninja0.png' />
+		<img src="img/ninja1.png" data-alt-src="img/cat1.png" />
+		<img src="img/cat2.png"  data-alt-src="img/ninja2.png" />
+		<img src="img/ninja3.png" data-alt-src="img/cat3.png" />
+		<img src="img/cat4.png"  data-alt-src="img/ninja4.png" />	
+	</div> <!--EO wrapper-->
+</body>
+</html>

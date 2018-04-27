@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Smile Monkey</title>
+      <meta charset="UTF-8">
+       <!-- <link rel="stylesheet" type="text/css" href="jQuery_style.css"> <!-- stylesheet-->
+       <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> <!-- jQuery  -->      
+   </head>
+   <body>
+      <script type="text/javascript">
+            $(document).ready(function(){
+               $("#smileMonk").hide(function(){
+                 $("#clickSlideDown").click(function() {
+                     $( "#smileMonk" ).slideDown( "slow", function() {
+                     // Animation complete.
+                     });
+                  });
+               })
+               $("#clickSlideUp").click(function() {
+                     $( "#smileMonk" ).slideUp( "slow", function() {
+                     // Animation complete.
+                     });
+                  });
+            })
+      </script>
+      <button id="clickSlideDown"> Click Slide Down </button>
+      <button id="clickSlideUp"> Click Slide Up </button>
+      <img id="smileMonk" src="smileMonkey.jpg" alt="" width="200" height="223">
+   </body>
+</html>
