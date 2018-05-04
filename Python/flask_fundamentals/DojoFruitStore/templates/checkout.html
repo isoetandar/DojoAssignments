@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <title>Check Out</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrapper {
+            margin: 25px;
+            padding: 25px;
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+
+		#under_line {
+			text-decoration: underline;
+		}
+		.table {
+			border: 1px solid black;
+			width: 400px;
+        }
+        label {
+            width: 125px;
+            height: 25px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h3>Thank you for your order!</h3>
+            <p>We ordered {{ strw+rsp+appl}} items for you and charged your student account on {{ tn }}.</p>
+            <p>You've ordered</p>
+            <table class="table table-striped">
+                <tr>
+                    <td>Fruit Name</td>
+                    <td>Quantity</td>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>{{ strw }}</td>
+                </tr>
+                <tr>
+                    <td>Raspberry</td>
+                    <td>{{ rsp }}</td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>{{ appl }}</td>
+                </tr>
+            </table><br>
+            <p id="under_line"> Your Information</p>
+            
+        </div>
+    </body>
+    <html>

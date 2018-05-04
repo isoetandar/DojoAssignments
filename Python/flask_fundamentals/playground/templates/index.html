@@ -1,0 +1,28 @@
+<head>
+<style>
+
+
+body {
+    background-color: white;
+}
+h1 {
+    color: maroon;
+    margin-left: 40px;
+}
+.blue{
+    width: 60px;
+    height:60px;
+    background-color: lightblue;
+    border: solid 1px black;
+    vertical-align: top;
+    margin: 10px;
+    display: inline-block
+}
+</style>
+<head>
+<body>
+    <h1>Hello World</h1>
+    {% for x in range(0, times): %}
+        <div class="blue"></div>
+    {% endfor %}
+</body>

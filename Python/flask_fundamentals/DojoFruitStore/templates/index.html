@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dojo Fruit Store</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/*outline: red dotted 1px;*/
+			}
+			#container{
+				width: 1000px;
+				height:1000px;
+				border: black solid 1px;
+				margin: 25px;
+				border: black 1px;
+
+			}
+			#fruitList {
+				width: 500px;
+				height: 500px;
+				background-color: white;
+				display: inline-block;
+				vertical-align: top;
+				margin: 20px;
+				padding: 20px;
+			}
+			#welcome{
+				width: 200px;
+				height: 600px;
+				margin: 10px;
+				padding: 10px;
+				background-color: rgb(0, 255, 251);
+				display: inline-block;
+				border: black 1px solid;
+				vertical-align: top;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			.table {
+				border: 1px solid black;
+				width: 400px;
+			}
+			label {
+				width: 125px;
+				height: 25px;
+			}
+			button {
+				height: 40px;
+				width: 120px;
+				margin-left: 185px;
+				margin-top: 25px;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="container">
+			<h2> Dojo Fruit Store!</h2>
+			<div id="fruitList">
+				<form action='/checkout' method='post' id="Dojo_Fruit_Store">
+				<p><span id="under_line">What would you like to buy?</span></p>
+				<table class="table table-striped">
+						<thead>
+						  <tr>
+							<th scope="col">#</th>
+							<th scope="col">Fruit Name</th>
+							<th scope="col">Quantity</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">1</th>
+							<td>Strawberry</td>
+							<td>
+								<select name="Strawberry">
+									<option value=1>1</option>
+									<option value=2>2</option>
+									<option value=3>3</option>
+									<option value=4>4</option>
+								</select>
+							</td>
+						  </tr>
+						  <tr>
+							<th scope="row">2</th>
+							<td>Raspberry</td>
+							<td><select name="Raspberry">
+									<option value=1>1</option>
+									<option value=2>2</option>
+									<option value=3>3</option>
+									<option value=4>4</option>
+								</select></td>
+						  </tr>
+						  <tr>
+							<th scope="row">3</th>
+							<td>Apple</td>
+							<td><select name="Apple">
+									<option value=1>1</option>
+									<option value=2>2</option>
+									<option value=3>3</option>
+									<option value=4>4</option>
+								</select></td>
+							</tr>							
+						</tbody>
+					  </table>
+					  <p id="under_line"> Your Information</p>
+					  <div id="your_information">
+						  <table class="table_information">
+							  <tr>
+								  <label for="Name" >Name:</label>
+								  <input id="Name" name="Name" type="text"><br>
+							  </tr>
+							  <tr>
+									<label for="Your Student ID:">Your Student ID:</label>
+									<input id="Student_ID" name="Student_ID" type="text">
+								</tr>
+						  </table>
+						  <button title="Buy me stuff!" id="submit" type="submit" form="Dojo_Fruit_Store">Buy me stuff!</button>
+
+					  </div>
+					</form>
+			</div> <!--fruitlist-->
+			<div id="welcome">
+				<p>Welcome to Dojo Fruit Store!</p>
+				<p>Your dojo decided to buy fruits for all the students!. Please use this app to tell us what you would like to have!. Once we get yur order, we'll charge your student account automatically.</p>
+				<p>Dojo Fruit Store is proudly build using Flask</p>
+			</div>
+
+
+		</div>
+	</body>
+</html>
