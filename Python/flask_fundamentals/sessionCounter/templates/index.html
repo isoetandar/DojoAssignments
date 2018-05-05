@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Session Counter</title>
+        <style>
+            *{
+               /* outline: 1px dotted red; */
+            }
+            .wrapper{
+                margin: 25%;
+                height: 250px;
+                width: 500px;
+                /*background-color: yellow;*/
+            }
+            h1{
+                margin-left: 50%;
+                text-decoration: underline;                
+            }
+            #redbutton{
+                background-color: red;
+                height: 35px;
+                width: 150px;
+                display: inline-block;                
+                margin-left: 30%;                
+                border-radius: 10px;                
+                vertical-align:middle;
+                font-weight: bold;
+            }
+            #greenbutton{
+                background-color: green;
+                height: 35px;
+                width: 150px;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Counter</h1>
+            <h1>{{ count }}</h1>
+            <button id="redbutton">Add two visits!</button>
+            <button id="greenbutton">Reset</button>
+        </div>
+    </body>
+</html>

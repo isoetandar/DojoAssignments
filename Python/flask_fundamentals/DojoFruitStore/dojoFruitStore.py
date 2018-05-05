@@ -21,7 +21,7 @@ def indexresult():
     # idStudent=request.form["Student_ID"]
     
     return render_template("checkout.html", strw =int(request.form["Strawberry"]), rsp = int(request.form["Raspberry"]), 
-        appl= int(request.form["Apple"]),tn = datetime.now() ) 
+        appl= int(request.form["Apple"]),tn = datetime.now(), named =request.form["Name"], idStudent=request.form["Student_ID"] ) 
     #this passing parameters to checkout.html, like parameter strw, rsp, appl) 
 
 if __name__ =="__main__":
