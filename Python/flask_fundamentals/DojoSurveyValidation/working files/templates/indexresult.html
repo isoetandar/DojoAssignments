@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Index Result</title>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-decoration: underline;
+
+        }
+    </style>
+    <body>
+        <div class="wrapper">
+            <h1>Submitted Info</h1>
+            <p>Name:              {{ request.form['name'] }}</p>
+            <p>Dojo Location:     {{ request.form['location'] }} </p>
+            <p>Favorite Language: {{ request.form['favorite'] }}</p>
+            <p>Comment:           {{ request.form['comment'] }}</p>
+            <button onclick="goBack()">Go Back</button>
+                <script>
+                function goBack() {
+                    window.history.back();
+                }
+                </script>
+        </div>
+    </body>
+</html>

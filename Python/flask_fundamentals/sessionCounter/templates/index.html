@@ -15,6 +15,9 @@
                 margin-left: 50%;
                 text-decoration: underline;                
             }
+            h2{
+                margin-left: 60%;
+            }
             #redbutton{
                 background-color: red;
                 height: 35px;
@@ -22,24 +25,34 @@
                 display: inline-block;                
                 margin-left: 30%;                
                 border-radius: 10px;                
-                vertical-align:middle;
                 font-weight: bold;
             }
             #greenbutton{
                 background-color: green;
                 height: 35px;
                 width: 150px;
+                display: inline-block;
                 border-radius: 10px;
                 font-weight: bold;
+            }
+            form{
+                display: inline-block;
+                width:65px;
+                margin-left: 25% 
             }
         </style>
     </head>
     <body>
         <div class="wrapper">
             <h1>Counter</h1>
-            <h1>{{ count }}</h1>
-            <button id="redbutton">Add two visits!</button>
-            <button id="greenbutton">Reset</button>
+            <h2>{{ session['count'] }}</h2>
+            <form action='/show' method='post'>
+                <button id="redbutton" name="add2">Add two visits!</button>
+            </form>
+            <form action='/reset' method='post'> 
+                <button id="greenbutton" name="reset">Reset</button>
+            </form>
+            
         </div>
     </body>
 </html>
