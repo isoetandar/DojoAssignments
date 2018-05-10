@@ -1,0 +1,13 @@
+USE twitter;
+SELECT * FROM users;
+SELECT * FROM faves;
+SELECT * FROM follows;
+SELECT * FROM tweets;
+SELECT * FROM users;
+SELECT first_name, last_name FROM users;
+SELECT last_name FROM users WHERE id = 2 OR id = 3;
+SELECT * FROM users WHERE first_name LIKE "%e";
+SELECT * FROM users WHERE first_name LIKE "%e" ORDER BY birthday DESC;
+INSERT INTO 'twitter','tweets' ('tweet', 'user_id', 'created_at, updated_at') 
+VALUES (' i AM VINO','10','2017-10-10','2018-12-12')
+UPDATE 'twitter','users', SET 'first_name'='Frobe' WHERE 'id'='1';
