@@ -33,7 +33,7 @@
 			button {
 				height: 40px;
 				width: 120px;
-				margin-left: 20px;
+				margin-left: 150px;
 				margin-top: 25px;
 				border-radius: 10px;
 				background-color: greenyellow;
@@ -43,7 +43,16 @@
 			}
 			#registration{
 				width: 360px;
-				background-color: aqua;
+				display: inline-block;
+				vertical-align: top;
+			}
+			#login{
+				width: 360;
+				display: inline-block;
+				vertical-align: top;
+			}
+			h3{
+				margin-left: 150px;
 			}
 		</style>
     </head>
@@ -52,32 +61,48 @@
 				<h2 id="under_line">Login and Registration</h2>
 				<form action='/Registration' method='post' id="registration">
 					  <h3>Register here!</h3><br>
-					  <div id="AddFriend">
-						  <table class="table_information">
+					  <div id="reg">
+						  <table class="table_reg">
 							  <tr>
 								<label for="first_name" >First Name:</label>
-								<input name="first_name" type="text"><br>
+								<input name="first_name" type="text" placeholder="First Name"><br>
 							  </tr>
 							  <tr>
 								<label for="last_name">Last Name:</label>
-								<input name="last_name" type="text"><br>
+								<input name="last_name" type="text" placeholder="Last Name"><br>
                                </tr>
                                <tr>
                                 <label for="email">Email:</label>
-                                <input name="email" type="text"><br>
+                                <input name="email" type="text" placeholder="Email"><br>
 							   </tr>
 							   <tr>
 								<label for="password">Password:</label>
-								<input name="password" type="text"><br>
+								<input name="password" type="text" placeholder="Password"><br>
 							   </tr>
 							   <tr>
                                 <label for="confirmPassword">Confirm Password:</label>
-                                <input name="confirmPassword" type="text">
+                                <input name="confirmPassword" type="text" placeholder="Confirm Password">
                            	   </tr>
 						  </table>
-						  <button title="Add" id="submit" type="submit" form="registration">Registration</button>
+						  <button title="Registration" id="submit" type="submit" form="registration">Registration</button>
 					  </div>
 				</form>
+				<form action='/Login' method='post' id="login">
+					<h3>Login here!</h3><br>
+					<div id="log">
+						<table class="table_log">
+							<tr>
+							  <label for="email_log" >Email:</label>
+							  <input name="first_name" type="text" placeholder="Registered Email"><br>
+							</tr>
+							<tr>
+							  <label for="password_log">Password:</label>
+							  <input name="passwlord_log" type="text" placeholder="Your login Password"><br>
+							 </tr>
+						</table>
+						<button title="Login" id="submit" type="submit" form="login">Login</button>
+					</div>
+			  </form>
 		</div> <!--EO Container-->
 	</body>
 </html>
