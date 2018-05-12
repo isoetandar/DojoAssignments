@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/irwan/Desktop/DojoAssignments/Python/myEnvironments/py3Env"
+set -gx VIRTUAL_ENV "/Users/irwansoetandar/Desktop/DojoAssignments/Python/myEnvironments/py3Env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

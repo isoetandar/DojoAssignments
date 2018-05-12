@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login and Registration</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/*outline: red dotted 1px;*/
+			}
+			#container{
+				width: 1000px;
+				/* height:1000px; */
+				border: black solid 1px;
+				margin: 5px;
+				border: black 1px;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			.table {
+				border: 1px solid black;
+				width: 400px;
+			}
+			label {
+				width: 130px;
+				height: 25px;
+				text-align: right;
+				margin: 10px;
+			}
+			button {
+				height: 40px;
+				width: 120px;
+				margin-left: 20px;
+				margin-top: 25px;
+				border-radius: 10px;
+				background-color: greenyellow;
+			}
+			input{
+				width: 200px;
+			}
+			#registration{
+				width: 360px;
+				background-color: aqua;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="container">
+				<h2 id="under_line">Login and Registration</h2>
+				<form action='/Registration' method='post' id="registration">
+					  <h3>Register here!</h3><br>
+					  <div id="AddFriend">
+						  <table class="table_information">
+							  <tr>
+								<label for="first_name" >First Name:</label>
+								<input name="first_name" type="text"><br>
+							  </tr>
+							  <tr>
+								<label for="last_name">Last Name:</label>
+								<input name="last_name" type="text"><br>
+                               </tr>
+                               <tr>
+                                <label for="email">Email:</label>
+                                <input name="email" type="text"><br>
+							   </tr>
+							   <tr>
+								<label for="password">Password:</label>
+								<input name="password" type="text"><br>
+							   </tr>
+							   <tr>
+                                <label for="confirmPassword">Confirm Password:</label>
+                                <input name="confirmPassword" type="text">
+                           	   </tr>
+						  </table>
+						  <button title="Add" id="submit" type="submit" form="registration">Registration</button>
+					  </div>
+				</form>
+		</div> <!--EO Container-->
+	</body>
+</html>

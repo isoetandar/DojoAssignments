@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Friends List</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/*outline: red dotted 1px;*/
+			}
+			#container{
+				width: 1000px;
+				height:1000px;
+				border: black solid 1px;
+				margin: 25px;
+				border: black 1px;
+
+			}
+			#fruitList {
+				width: 500px;
+				height: 500px;
+				background-color: white;
+				display: inline-block;
+				vertical-align: top;
+				margin: 20px;
+				padding: 20px;
+			}
+			#welcome{
+				width: 200px;
+				height: 600px;
+				margin: 10px;
+				padding: 10px;
+				background-color: rgb(0, 255, 251);
+				display: inline-block;
+				border: black 1px solid;
+				vertical-align: top;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			.table {
+				border: 1px solid black;
+				width: 400px;
+			}
+			label {
+				width: 125px;
+				height: 25px;
+			}
+			button {
+				height: 40px;
+				width: 120px;
+				margin-left: 155px;
+				margin-top: 25px;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="container">
+			<h2> These are my friends!</h2>
+			<div id="friendList">
+				<form action='/create_friend' method='post' id="MyFriendList">
+				
+				<table class="table table-striped">
+						<thead>
+						  <tr>
+							<th scope="col">First Name</th>
+							<th scope="col">Last Name</th>
+							<th scope="col">Occupation</th>
+						  </tr>
+						</thead>
+						<tbody>
+                            {% for frnd in friends %}
+						  <tr>
+							<td>{{ frnd['first_name']}}</td>
+                            <td>{{ frnd['last_name']}}</td>
+                            <td>{{ frnd['occupation']}}</td>
+                          </tr>
+                          {% endfor %}							
+						</tbody>
+					  </table>
+					  <p id="under_line">Add Friend</p>
+					  <div id="AddFriend">
+						  <table class="table_information">
+							  <tr>
+								  <label for="first_name" >First Name:</label>
+								  <input name="first_name" type="text"><br>
+							  </tr>
+							  <tr>
+									<label for="last_name">Last Name:</label>
+									<input name="last_name" type="text"><br>
+                               </tr>
+                               <tr>
+                                <label for="occupation">Occupation:</label>
+                                <input name="occupation" type="text">
+                           </tr>
+						  </table>
+						  <button title="Add" id="submit" type="submit" form="MyFriendList">Add</button>
+
+					  </div>
+					</form>
+            </div> <!--FriendLisrt-->
+		</div>
+	</body>
+</html>

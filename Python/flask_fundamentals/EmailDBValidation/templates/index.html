@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Email Validation w/ Database</title>
+</head>
+<style>
+  #container {
+    margin-left:15%;
+    margin-top: 15%;
+    margin-right:15%;
+    padding: 20px;
+    margin-bottom: 0%;
+  }
+  #messagebox {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #emailsbox{
+    width: 300px;
+    background-color: green;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+  }
+  h3 {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0%;
+    margin-bottom: 5px;
+    
+  }
+</style>
+<body>
+    <!--Email Validation w/ Database-->
+<div id="container">
+<h3>Enter a Valid Email!</h3>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <div id="messagebox">
+      <p>{{message}}</p>
+      </div><!--EO messagebox-->
+      <br>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<form action='/process', method='post'>
+  <label for="emails">Email</label>
+  <input id="text" name="emails" type="text">
+  <button>Submit</button>
+</form>
+
+<div id="emailsbox">
+  <h3>Current Emails in database:</h3>
+  {% for em in emails %}
+    {{ em['emails']}}<br>
+  {% endfor %}
+</div><!--EO emailsbox-->
+</div> <!--EO container-->
+</body>
+</html>
+
+
+
+
+
+
+
