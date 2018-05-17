@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Success Login</title>
+    </head>
+    <body>
+        Success login
+        {{ session['id']}}
+        {{ request.form}}
+        <form action='/getBack' methods='get' id="getback">
+            <button title="getBack" id="submit" type="submit" form="getback">Back to Login and Registration page</button>
+        </form>
+    </body>
+
+</html>

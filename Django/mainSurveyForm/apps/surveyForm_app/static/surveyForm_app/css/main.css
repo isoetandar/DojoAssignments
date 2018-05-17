@@ -1,0 +1,30 @@
+
+*{
+    margin: 10px;
+    padding: 0px;
+    /* outline: dotted red;*/
+}
+
+.layout{
+    display: inline-block;
+    vertical-align: top;
+    background-color: blueviolet;
+}
+#label{
+    width: 80px;
+    height: 25px;   
+    background-color: aquamarine;  
+    vertical-align: top;
+
+}
+#comment{
+    width: 300px;
+    height: 100px;
+    text-align: left;
+}
+#submit{
+    width: 100px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 75px;
+}

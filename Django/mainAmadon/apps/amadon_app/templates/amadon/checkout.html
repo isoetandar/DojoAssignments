@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <title>Check Out</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrapper {
+            margin: 25px;
+            padding: 25px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h3>Thank you for your business!</h3>
+            <p>We charged your credit card for ${{ request.session.totBuyPayment }}.</p>
+            <p>You've ordered {{ request.session.totBuyItems }} items so far and spent</p>
+            <p>$ {{ request.session.totCost }} with Amadon.com</p>
+            
+            <p><a href="http://localhost:8000/" >Go back</a></p>
+        </div>
+    </body>
+    <html>

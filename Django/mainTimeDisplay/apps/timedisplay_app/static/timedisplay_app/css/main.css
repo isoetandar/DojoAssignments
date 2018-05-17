@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding:0px;;
+  }
+p {
+    width: 225px;
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+    padding-top:12px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+#TimeAndDate {
+    width: 375px;
+    border: 1px solid black;
+    text-align: center;
+    height: 60px;
+    padding:20px;
+    margin-top: 10px;
+    margin-left: 100px;
+}

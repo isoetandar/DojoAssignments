@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Message</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/*outline: red dotted 1px;*/
+			}
+			#container{
+				width: 1000px;
+				/* height:1000px; */
+				border: black solid 1px;
+				margin: 5px;
+				border: black 1px;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			button {
+				height: 30px;
+				width: 120px;
+				border-radius: 10px;
+                color: white;
+				background-color: green;
+			}
+			input{
+				width: 800px;
+			}
+            #messagetext{
+                width: 600px;
+                height: 125px;
+            }
+            #commenttext{
+                width: 520px;
+                height: 55px;
+            }
+            form{
+                margin: 25px;
+            }
+            #commentform{
+                margin-left: 100px;
+            }
+            #messagebox{
+                margin-left: 55px;
+                width: 575px;
+            }
+            #commentarea{
+                margin-left: 105px;
+                width: 565px;
+            }
+		</style>
+    </head>
+    <body>
+		<div id="container">
+            <form action='/process' method='post' id="postmessage">
+                <p id="under_line">Post a message</p>
+				<textarea name="message" id="messagetext"></textarea><br>
+                <button title="postmessage" type="submit">Post a message</button>
+                
+            </form>
+            <div id="messagebox">
+                    {% for element in textmessage %}
+                        {{ element['message'] }}<br>
+                    {% endfor %}
+            </div>
+            <div id="commentarea">
+                {% for elmt in textcomment %}
+                    {{ element['comment'] }}<br>
+                {% endfor %}
+            </div>
+            <div id="commentbox">
+                <form action='/postcomment' method="post" id="commentform">
+                    <p id="under_line">Post a message</p>
+                    <textarea name="comment" id="commenttext"></textarea><br>
+                    <button title="postcomment" type="submit">Post a comment</button>
+                </form>
+            </div> <!--EO commentbox-->
+		</div> <!--EO Container-->
+	</body>
+</html>

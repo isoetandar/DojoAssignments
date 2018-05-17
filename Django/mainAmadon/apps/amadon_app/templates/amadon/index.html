@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>AMADON</title>
+		{% load static %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" type="text/css" href="{% static 'amadon_app/css/main.css' %}">
+      <!-- Put the static files in the static folder inside your app.  
+           Django collects files within all static folders and puts them within a single folder --> 
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/*outline: red dotted 1px;*/
+			}
+			#container{
+				width: 1000px;
+				height:1000px;
+				border: black solid 1px;
+				margin: 25px;
+				border: black 1px;
+
+			}
+			#fruitList {
+				width: 500px;
+				height: 500px;
+				background-color: white;
+				display: inline-block;
+				vertical-align: top;
+				margin: 20px;
+				padding: 20px;
+			}
+			#welcome{
+				width: 200px;
+				height: 600px;
+				margin: 10px;
+				padding: 10px;
+				background-color: rgb(0, 255, 251);
+				display: inline-block;
+				border: black 1px solid;
+				vertical-align: top;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			.table {
+				border: 1px solid black;
+				width: 400px;
+			}
+			label {
+				width: 125px;
+				height: 25px;
+			}
+			button {
+				height: 20px;
+				width: 40px;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="container">
+			<h2> Amadon Store!</h2>
+			<div id="storelist">
+				<form action='/amadon/buy', method='post', id="Amadon">
+				{% csrf_token %}
+				<p><span id="under_line">What would you like to buy?</span></p>
+				<table class="table table-striped">
+						<thead>
+						  <tr>
+							<th scope="col">Item</th>
+							<th scope="col">Price</th>
+							<th scope="col">Action</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">Dojo Tshirt</th>
+							<td>$19.99</td>
+							<td>
+								<select name="Tshirt">
+									<option value=0>0</option>
+									<option value=1>1</option>
+									<option value=2>2</option>
+									<option value=3>3</option>
+									<option value=4>4</option>
+								</select>
+								<button title="Buy" id="submitTshirt" type="submit" form="Amadon">Buy</button>
+							</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Dojo Sweater</th>
+							<td>$29.99</td>
+							<td><select name="Sweater">
+									<option value=0>0</option>
+									<option value=1>1</option>
+									<option value=2>2</option>
+									<option value=3>3</option>
+									<option value=4>4</option>
+								</select>
+								<button title="Buy" id="submitSweater" type="submit" form="Amadon">Buy</button>
+							</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Dojo Cup</th>
+							<td>$4.99</td>
+							<td><select name="Cup">
+									<option value=0>0</option>
+									<option value=1>1</option>
+									<option value=2>2</option>
+									<option value=3>3</option>
+									<option value=4>4</option>
+								</select>
+								<button title="Buy" id="submitCup" type="submit" form="Amadon">Buy</button>
+							</td>
+							</tr>
+							<tr>
+							<th scope="row">Algorithm Book</th>
+								<td>$49.99</td>
+								<td>
+									<select name="Algo">
+										<option value=0>0</option>
+										<option value=1>1</option>
+										<option value=2>2</option>
+										<option value=3>3</option>
+										<option value=4>4</option>
+									</select>
+									<button title="Buy" id="submitAlgo" type="submit" form="Amadon">Buy</button>
+									</td>
+								</tr>								
+						</tbody>
+					  </table>
+					  </div>
+					</form>
+			</div> <!-- EO Item List-->
+		</div>
+	</body>
+</html>

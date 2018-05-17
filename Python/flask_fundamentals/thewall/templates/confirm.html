@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Confirm Registration</title>
+    </head>
+    <body>
+        <p>Thank you for registration</p>
+        <p>Your name is {{ request.form['first_name'] }}</p>
+        <p>Your email is {{ request.form['email'] }}</p>
+        <form action='/getBack' methods='get' id="getback">
+            <button title="getBack" id="submit" type="submit" form="getback">Back to Login</button>
+        </form>
+    </body>
+
+</html>

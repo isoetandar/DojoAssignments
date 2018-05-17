@@ -54,6 +54,9 @@
 			h3{
 				margin-left: 150px;
 			}
+			#errorbox{
+				color: red;
+			}
 		</style>
     </head>
     <body>
@@ -61,10 +64,18 @@
 				<h2 id="under_line">Login and Registration</h2>
 				<form action='/Registration' method='post' id="registration">
 					  <h3>Register here!</h3><br>
+					  <div id="errorbox">
+						<div>{{session['errors']}}</div>
+						<div>{{session['first_name']}}</div>
+						<div>{{session['last_name']}}</div>
+						<div>{{session['email']}}</div>
+						<div>{{session['password']}}</div>
+						<div>{{session['password_char']}}</div>
+					  </div>
 					  <div id="reg">
 						  <table class="table_reg">
 							  <tr>
-								<label for="first_name" >First Name:</label>
+								<label for="first_name" color = {{ session['first_name_coler'] }} >First Name:</label>
 								<input name="first_name" type="text" placeholder="First Name"><br>
 							  </tr>
 							  <tr>
@@ -89,15 +100,19 @@
 				</form>
 				<form action='/Login' method='post' id="login">
 					<h3>Login here!</h3><br>
+					<div id="errorbox">
+						<div>{{session['error_log']}}</div>
+						<div>{{session['email_log']}}</div>
+					</div>
 					<div id="log">
 						<table class="table_log">
 							<tr>
 							  <label for="email_log" >Email:</label>
-							  <input name="first_name" type="text" placeholder="Registered Email"><br>
+							  <input name="email_log" type="text" placeholder="Registered Email"><br>
 							</tr>
 							<tr>
 							  <label for="password_log">Password:</label>
-							  <input name="passwlord_log" type="text" placeholder="Your login Password"><br>
+							  <input name="password_log" type="text" placeholder="Your login Password"><br>
 							 </tr>
 						</table>
 						<button title="Login" id="submit" type="submit" form="login">Login</button>

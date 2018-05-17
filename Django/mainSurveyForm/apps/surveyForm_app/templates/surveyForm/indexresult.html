@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Index Result</title>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrapper {
+            width: 460px;
+            vertical-align: left;
+            margin: 60px;
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+        #summary {
+        text-align: left;
+        cursor: col-resize;
+        width:140px;
+        line-height: 15px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right
+        }
+
+    </style>
+    <body>
+        <div class="wrapper">
+            <h1>Submitted Information</h1>
+            <br>
+            <p id="summary">Name              :</p> {{ request.session.yourname }}<br>
+            <p id="summary">Dojo Location     :</p> {{ request.session.location }}<br>
+            <p id="summary">Favorite Language :</p> {{ request.session.favorite }}<br>
+            <p id="summary">Comment           :</p> {{ request.session.comment }}<br>
+            <br>
+            <button onclick="goBack()">Go Back</button>
+                <script>
+                function goBack() {
+                    window.history.back();
+                }
+                </script>
+        </div>
+    </body>
+</html>
