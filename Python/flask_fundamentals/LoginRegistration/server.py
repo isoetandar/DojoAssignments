@@ -27,7 +27,7 @@ def confirm():
     print()
     pw = request.form['password']
     pw_hash = bcrypt.generate_password_hash(pw)
-    # pw_hash = str(pw_hash).strip('b').replace("'","")
+    pw_hash = str(pw_hash).strip('b').replace("'","")
 
     if len(request.form['first_name']) <= 2 :
         session['first_name'] = "First Name must have at least 3 characters"

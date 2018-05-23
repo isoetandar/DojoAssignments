@@ -34,6 +34,10 @@ INSTALLED_APPS = [
     'apps.blogs_app',
     'apps.surveys_app',
     'apps.users_app',
+    'apps.dojo_ninjas',
+    'apps.Books_Authors',
+    'apps.LikesBooks',
+    'apps.Restful',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,7 +125,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    'static',
-]
+
