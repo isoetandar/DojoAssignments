@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>View Job</title>
+		<meta charset="utf-8">
+		{% load static %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/* outline: red dotted 1px; */
+			}
+			#container{
+				width: 400px;
+				/* height:1000px; */
+				border: black solid 1px;
+				margin: 5px;
+				border: black 1px;
+                padding:50px;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			.table {
+				border: 1px solid black;
+				width: 400px;
+			}
+			label {
+				width: 130px;
+				height: 25px;
+				text-align: right;
+				margin: 10px;
+			}
+			input{
+				width: 200px;
+			}
+			h3{
+				margin-left: 150px;
+			}
+            #header{
+                text-align: right;
+                margin-right: 20px;
+            }
+            textarea {
+                width: 200px;
+                height: 200px;
+            }
+		</style>
+    </head>
+    <body>
+		<div id="container">
+            <div name="header" id="header">
+                <a href="/Dashboard">Back</a> <a href="/logout" >Logout</a>
+            </div>
+				<h4 id="under_line">{{ job.job }}</h4>
+					
+                    <textarea name="description" id="description" >{{ job.desc }}</textarea><br>
+                <form>
+                <a href="">Add To My Jobs</a>
+
+                </form>
+		</div> <!--EO Container-->
+	</body>
+</html>

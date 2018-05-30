@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Binary Search
+        </title>
+    </head>
+    <body>
+        <script>
+            function binSearch( arr, num) {
+                var right = arr.length-1
+                var left = 0
+                var mid = Math.floor(right/2)
+                while (num != arr[right]){  
+                    if (num < arr[mid]) {  
+                        right = mid
+                    }
+                    else {
+                        var left = mid 
+                        }
+                    mid = Math.floor(right-left)/2    
+                }
+                return right // Index of array
+            }
+
+            arr = [12,13,14,15,16,17]
+            alert(binSearch(arr, 13))
+        </script>
+        arr = [12,13,14,15,16,17]
+        binSearch(arr, 17)
+    </body>
+</html>

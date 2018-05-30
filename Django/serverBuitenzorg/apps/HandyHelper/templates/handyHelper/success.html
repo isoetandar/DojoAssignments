@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Success Login</title>
+        <style>
+        #container{
+            margin: 100px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h2>Success registration! Welcome {{ request.session.first_name }}!</h2>
+            <br>
+            <a href="/"><button name="goBackLogin" id="goBackLogin">Go Back and Login</button></a>
+        </div>
+    </body>
+
+</html>

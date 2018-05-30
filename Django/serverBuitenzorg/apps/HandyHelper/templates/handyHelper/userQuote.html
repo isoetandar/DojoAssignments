@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Quote</title>
+		<meta charset="utf-8">
+		{% load static %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/*outline: red dotted 1px;*/
+			}
+			#container{
+				width: 400px;
+				/* height:1000px; */
+				border: black solid 1px;
+				margin: 5px;
+				border: black 1px;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			.table {
+				border: 1px solid black;
+				width: 400px;
+			}
+			label {
+				width: 130px;
+				height: 25px;
+				text-align: right;
+				margin: 10px;
+			}
+			button {
+				height: 40px;
+				width: 120px;
+				margin-left: 150px;
+				margin-top: 25px;
+				border-radius: 10px;
+				background-color: greenyellow;
+			}
+			input{
+				width: 200px;
+			}
+			h3{
+				margin-left: 150px;
+			}
+			h4{
+				color:black;
+				margin-left: 70px;
+			}
+            #header{
+                text-align: right;
+                margin-right: 20px;
+            }
+            textarea {
+                width: 200px;
+                height: 200px;
+            }
+		</style>
+    </head>
+    <body>
+		<div id="container">
+            <div name="header" id="header">
+				<a href="/Dashboard">Back</a> <a href="/logout" >Logout</a>
+            </div>
+				<h4 id="under_line">Edit Your Job Posting</h4>
+				<form action='/addJob' method='post' id="addjob">
+					{% csrf_token %}
+					<div id="log">
+						<table class="table_log">
+							<tr>
+							  <label for="title" >Tittle:</label>
+							  <input name="title" type="text" placeholder="Job Title" value="{{job.job}}"><br>
+                            </tr>
+                            <tr>
+                                <label for="description" >Description:</label>
+                                <textarea name="description" id="description">{{ job.desc }}</textarea><br>
+                              </tr>
+							<tr>
+							  <label for="location">Location:</label>
+							  <input name="location" type="text" placeholder="Job Location" value="{{job.location}}"><br>
+							 </tr>
+						</table>
+						<button title="Login" id="submit" type="submit" form="login">Submit</button>
+					</div>
+			  </form>
+		</div> <!--EO Container-->
+	</body>
+</html>
