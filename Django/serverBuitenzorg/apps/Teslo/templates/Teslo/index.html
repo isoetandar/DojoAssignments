@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Nick Tesla</title>
+    <meta charset="utf-8">
+	{% load static %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+    <style>
+        *{
+            margin: 0px;
+            /* outline: 1px dotted red; */
+            padding: 0px
+        }
+        
+        #container {
+			background-image: url("../static/staticTeslo/image/mooiTesla.jpg");
+			background-size: cover;
+            width: 90%;
+            height:100%;
+            vertical-align: center;
+            margin: 2%
+        }
+        #header {
+            height: 50px;
+            text-align: right;
+            padding-right: 2%;
+            padding-top: 2%;
+            color: black;
+        }
+		a {
+			color: aliceblue;
+		}
+		a:hover {
+			color: red;
+			font-weight: bold;
+		}
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+			<a href="">Buy</a>   |  <a href="">Customize</a>  |  <a href="/login">Sign In</a> | <a href="/registration">Registration</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

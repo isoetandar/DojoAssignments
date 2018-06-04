@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration</title>
+		<meta charset="utf-8">
+		{% load static %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				/*outline: red dotted 1px;*/
+			}
+			#container{
+				width: 1000px;
+				/* height:1000px; */
+				border: black solid 1px;
+				margin: 5px;
+				border: black 1px;
+			}
+			#under_line {
+				text-decoration: underline;
+			}
+			.table {
+				border: 1px solid black;
+				width: 400px;
+			}
+			label {
+				width: 130px;
+				height: 25px;
+				text-align: right;
+				margin: 10px;
+			}
+			button {
+				height: 40px;
+				width: 120px;
+				margin-left: 150px;
+				margin-top: 25px;
+				border-radius: 10px;
+				background-color: greenyellow;
+			}
+			input{
+				width: 200px;
+			}
+			#registration{
+				width: 360px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			#login{
+				width: 360;
+				display: inline-block;
+				vertical-align: top;
+			}
+			h3{
+				margin-left: 150px;
+			}
+			h4{
+				margin-left: 70px;
+			}
+			#container {
+            background-image: url("../static/staticTeslo/image/whiteTeslaSedan.jpg");         
+			background-size: cover;
+            width: 90%;
+            height:100%;
+            vertical-align: center;
+            margin: 2%
+        	}
+			form{
+				margin-bottom: 400px;
+			}			
+		</style>
+    </head>
+    <body>
+		<div id="container">
+				<form action='/registration' method='post' id="registration">
+					{% csrf_token %}
+					  <h4>Register</h4><br>
+					  	{% for message in messages %}
+					  		<h4>{{ message }}<br></h4>
+						{% endfor %}  
+					  <div id="reg">
+						  <table class="table_reg">
+							  <tr>
+								<label for="first_name">First Name:</label>
+								<input name="first_name" type="text" placeholder="First Name"><br>
+							  </tr>
+							  <tr>
+								<label for="last_name">Last Name:</label>
+								<input name="last_name" type="text" placeholder="Last Name"><br>
+                               </tr>
+                               <tr>
+                                <label for="email">Email:</label>
+                                <input name="email" type="text" placeholder="Email"><br>
+							   </tr>
+							   <tr>
+								<label for="password">Password:</label>
+								<input name="password" type="password" placeholder="Password"><br>
+							   </tr>
+							   <tr>
+                                <label for="confirmPassword">Confirm Password:</label>
+                                <input name="confirmPassword" type="password" placeholder="Confirm Password">
+                           	   </tr>
+						  </table>
+						  <button title="Registration" id="submit" type="submit" form="registration">Registration</button>
+					  </div>
+				</form>
+		</div> <!--EO Container-->
+	</body>
+</html>
