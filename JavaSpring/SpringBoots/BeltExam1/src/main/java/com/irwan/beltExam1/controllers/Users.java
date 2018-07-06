@@ -30,10 +30,10 @@ public class Users {
  	}
  	
  
-// 	@RequestMapping("/registration")
-// 	public String registerForm(@ModelAttribute("user") User user) {
-//     return "registrationPage.jsp";
-// 	}
+ 	@RequestMapping("/registration")
+ 	public String registerForm(@ModelAttribute("user") User user) {
+     return "registrationPage.jsp";
+ 	}
 // 	@RequestMapping("/login")
 // 	public String login() {
 // 		return "loginPage.jsp";

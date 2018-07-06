@@ -1,0 +1,152 @@
+@charset "UTF-8";
+* {
+	margin:0px;
+	padding:0px;
+	/* outline: 1px dotted red; */
+
+}
+
+.header{
+		margin:10px;
+		width:1000px;
+		height:75px;
+		background-image: url("../images/skyview.jpg");
+		background-repeat: no-repeat;
+		background-position:center;
+		border: dotted black 1px;
+		border-radius:10px;
+		padding-top:15px;
+		margin-left:15px;
+		padding-left:10px;
+		display:inline-block;
+	}
+.footer{
+		margin:10px;
+		width:1000px;
+		height:25px;
+		background-image: url("../images/keyboardhand.jpg");
+		background-repeat: no-repeat;
+		background-position:center;
+		background-color: lightblue;
+		border: dotted black 1px;
+		border-radius:10px;
+		padding-top:15px;
+		margin-left:15px;
+		padding-left:10px;
+		display:inline-block;
+	}
+	
+.registration{
+    	width: 400px;
+    	display: inline-block;
+    	vertical-align: top;
+    	border: solid black 1px;
+    	padding:10px;
+    }
+    
+.login{
+    	width: 400px;
+    	display: inline-block;
+    	vertical-align: top;
+    	border: solid black 1px;
+    	padding:10px;
+    }
+    
+.horizontal_menu{
+	height:25px;
+	width:1000px;
+	border: solid black 1px;
+	border-radius:8px;
+	margin-left:15px;
+	padding:5px;
+	text-align:right;
+	vertical-align:right;
+	display: inline-block;
+	background-color: black;
+	color:white;
+}
+
+a:link {
+	color:white;
+}
+a:hover {
+	color:lightgreen;
+}
+a:visited {
+	color: red;
+}
+a:active {
+	color:red;
+}
+
+#mainContainer {
+	width:1010px;
+	height: 750px;
+	border: solid black 1px;
+	border-radius: 3px;
+	margin-left:15px;
+	background-image: url("../images/background.jpg");
+	background-size: contain;
+	display: flex;
+  	justify-content: space-between;
+}
+
+.mainsub1{
+	width:200px;
+	height:200px;
+	display:inline-block;
+	margin:10px;
+	border:black solid 1px;
+	background-size: contain;
+	background-image: url("../images/valve_artifact.jpg");
+	background-repeat: no-repeat;
+	background-color: white;
+	color: white;
+	font-weight:bold;
+	text-align: center;
+	align-items: center;
+}
+#vertext {
+	margin-top:42%;
+}
+
+.mainsub2{
+	width:200px;
+	height:200px;
+	display:inline-block;	
+	margin:10px;
+	border:black solid 1px;
+	background-size: contain;
+	background-image: url("../images/tesla_interior.jpg");
+	background-repeat: no-repeat;
+	background-color: white;
+	font-weight:bold;
+}
+.mainsub3{
+	width:200px;
+	height:200px;
+	display:inline-block;
+	margin:10px; 
+	border:black solid 1px;
+	background-size: contain;
+	background-image: url("../images/iu9jO3C.jpg");
+	background-repeat: no-repeat;
+	background-color: white;
+}
+#vertext1 {
+	margin-top:32%;
+	margin-left:44%;
+}
+.mainsub4{
+	width:200px;
+	height:200px;
+	display:inline-block;
+	margin:10px; 
+	border:black solid 1px;
+	background-size: contain;
+	background-image: url("../images/Mars.png");
+	background-repeat: no-repeat;
+	background-color: white;
+	text-align:center;
+	background-position:center;
+}

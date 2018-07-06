@@ -1,0 +1,32 @@
+@charset "UTF-8";
+* {
+	margin:0px;
+	padding:0px;
+	/* outline: 1px dotted red; */
+	
+}
+
+body{
+	background-image: url("../images/keyboardhand.jpg");
+	background-repeat: no-repeat;
+	background-position:center;
+}
+input {
+	width: 200px;
+	height: 30px;
+	font-size :15px;
+}
+#registrar {
+	margin-top:33%;
+	margin-left:43%;
+}
+h1{
+	color:red;
+	animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

@@ -10,5 +10,6 @@ import com.irwan.beltExam1.models.Idea;
 
 @Repository
 public interface IdeaRepository extends CrudRepository<Idea, Long> {
+	@Override
 	List<Idea> findAll();
 }

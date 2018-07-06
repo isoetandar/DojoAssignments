@@ -55,7 +55,9 @@ public class Users {
  			return "redirect:/home";
  		} else {
  			model.addAttribute("error","Your login is incorrect. Try again!");
- 			return "loginPage.jsp";
+// 			return "loginPage.jsp";
+ 			System.out.println("error");
+ 			return "redirect:/home";
  		}
  	}
  

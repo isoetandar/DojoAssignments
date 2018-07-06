@@ -7,27 +7,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration Page</title>
+    <link type="text/css" rel="stylesheet" href="../css/stylesheet_register.css" >
 </head>
 <body>
+  <div id="registrar">
     <h1>Register!</h1>
-    
     <p><form:errors path="user.*"/></p>
-    
     <form:form method="POST" action="/registration" modelAttribute="user">
-        <p>
-            <form:label path="email">Email:</form:label>
-            <form:input type="email" path="email"/>
-        </p>
-        <p>
-            <form:label path="password">Password:</form:label>
-            <form:password path="password"/>
-        </p>
-        <p>
-            <form:label path="passwordConfirmation">Password Confirmation:</form:label>
-            <form:password path="passwordConfirmation"/>
-        </p>
+        <p><form:input type="name" path="name" placeholder="Name"/></p>
+        <p><form:input type="email" path="email" placeholder="Email"/></p>
+        <p><form:password path="password" placeholder="Password"/></p>
+        <p><form:password path="passwordConfirmation" placeholder="Password Confirmation"/></p><br>
         <input type="submit" value="Register!"/>
     </form:form>
-    
+  </div>
 </body>
 </html>
